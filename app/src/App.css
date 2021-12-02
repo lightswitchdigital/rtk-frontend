@@ -1,0 +1,54 @@
+body{
+  font-family: 'RostelecomBasis';
+}
+.container{
+  max-width: 1232px;
+  width: 100%;
+  margin: 0 auto;
+}
+.logoRtc{
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  text-decoration: none;
+  color: #101828;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  white-space: nowrap;
+}
+.header{
+  padding: 20px 0;
+  margin: 0;
+  border-bottom: 1px solid rgba(16, 24, 40, 0.1);
+}
+.d-flex.jc-sb{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.logoRtc img{
+  height: 40px;
+  margin-right: 4px;
+}
+.header ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.header li:not(:last-child){
+  margin-right: 12px;
+}
+.header ul a{
+  text-decoration: none;
+  font-size: 14px;
+  color: rgba(16, 24, 40, 0.5);
+  transition: all 0.2s;
+}
+.header ul a:hover{
+  text-decoration: none;
+  font-size: 14px;
+  color: rgba(16, 24, 40, 1);
+}
