@@ -5,7 +5,7 @@ const instance = axios.create({
 })
 
 export const API = {
-    getWards(){
-        // return instance.get(`wards/get`)
+    getPhotos(page, from, to){
+        return instance.get(`photos?page=${page}&date-from=${from}&date-to=${to}`)
     }
 }

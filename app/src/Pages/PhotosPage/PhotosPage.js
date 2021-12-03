@@ -5,6 +5,7 @@ import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import { ArrowDown2, ArrowUp2 } from 'iconsax-react'
 import { NavLink } from 'react-router-dom';
+import { Card } from '../../Components/Card/Card';
 
 class PhotosPageAPI extends Component {
   render() {
@@ -16,7 +17,7 @@ class PhotosPageAPI extends Component {
 
     return (
       <div className={s.wrapper}>
-        <Dropdown options={options} 
+         <Dropdown options={options} 
         arrowClosed={<ArrowDown2 className={s.arrow}/>}
         arrowOpen={<ArrowUp2 className={s.arrow}/>}
         value={options[0]}
@@ -26,67 +27,27 @@ class PhotosPageAPI extends Component {
         placeholderClassName={s.dropdownPlaceholder}
         />
         <div className={s.flex}>
-          <div className={s.card}>
-            <div className={s.img}>
-              <img src="https://sun9-83.userapi.com/impg/_NdiutKXB4wTPB0YFKb39RYqZyZhuqIwbl-7Lw/fdezs1mCZ5s.jpg?size=1619x2160&quality=96&sign=bc8df974a68436d9655b369bf0bebe09&type=album"/>
-            </div>
-            <p className={s.info}>
-              <span>Источник:</span>
-              <span>Вконтакте</span>
-            </p>
-            <p className={s.info}>
-              <span>Дата создания:</span>
-              <span>12.03.2021</span>
-            </p>
-            <NavLink to={'/'}>Перейти на страницу фотографии</NavLink>
-            <NavLink to={'/'}>Не моя фотография</NavLink>
-          </div>
-          <div className={s.card}>
-            <div className={s.img}>
-              <img src="https://sun9-83.userapi.com/impg/_NdiutKXB4wTPB0YFKb39RYqZyZhuqIwbl-7Lw/fdezs1mCZ5s.jpg?size=1619x2160&quality=96&sign=bc8df974a68436d9655b369bf0bebe09&type=album"/>
-            </div>
-            <p className={s.info}>
-              <span>Источник:</span>
-              <span>Вконтакте</span>
-            </p>
-            <p className={s.info}>
-              <span>Дата создания:</span>
-              <span>12.03.2021</span>
-            </p>
-            <NavLink to={'/'}>Перейти на страницу фотографии</NavLink>
-            <NavLink to={'/'}>Не моя фотография</NavLink>
-          </div>
-          <div className={s.card}>
-            <div className={s.img}>
-              <img src="https://sun9-83.userapi.com/impg/_NdiutKXB4wTPB0YFKb39RYqZyZhuqIwbl-7Lw/fdezs1mCZ5s.jpg?size=1619x2160&quality=96&sign=bc8df974a68436d9655b369bf0bebe09&type=album"/>
-            </div>
-            <p className={s.info}>
-              <span>Источник:</span>
-              <span>Вконтакте</span>
-            </p>
-            <p className={s.info}>
-              <span>Дата создания:</span>
-              <span>12.03.2021</span>
-            </p>
-            <NavLink to={'/'}>Перейти на страницу фотографии</NavLink>
-            <NavLink to={'/'}>Не моя фотография</NavLink>
-          </div>
-          
-          <div className={s.card}>
-            <div className={s.img}>
-              <img src="https://sun9-83.userapi.com/impg/_NdiutKXB4wTPB0YFKb39RYqZyZhuqIwbl-7Lw/fdezs1mCZ5s.jpg?size=1619x2160&quality=96&sign=bc8df974a68436d9655b369bf0bebe09&type=album"/>
-            </div>
-            <p className={s.info}>
-              <span>Источник:</span>
-              <span>Вконтакте</span>
-            </p>
-            <p className={s.info}>
-              <span>Дата создания:</span>
-              <span>12.03.2021</span>
-            </p>
-            <NavLink to={'/'}>Перейти на страницу фотографии</NavLink>
-            <NavLink to={'/'}>Не моя фотография</NavLink>
-          </div>
+          <Card 
+          img={"https://sun9-83.userapi.com/impg/_NdiutKXB4wTPB0YFKb39RYqZyZhuqIwbl-7Lw/fdezs1mCZ5s.jpg?size=1619x2160&quality=96&sign=bc8df974a68436d9655b369bf0bebe09&type=album"}
+          source={"Вконтакте"}
+          date={"12.03.2021"}
+          linkPhoto={"/"}
+          fakeBtn={true}
+          />
+          <Card 
+          img={"https://sun9-83.userapi.com/impg/_NdiutKXB4wTPB0YFKb39RYqZyZhuqIwbl-7Lw/fdezs1mCZ5s.jpg?size=1619x2160&quality=96&sign=bc8df974a68436d9655b369bf0bebe09&type=album"}
+          source={"Вконтакте"}
+          date={"12.03.2021"}
+          linkPhoto={"/"}
+          fakeBtn={true}
+          />
+          <Card 
+          img={"https://sun9-83.userapi.com/impg/_NdiutKXB4wTPB0YFKb39RYqZyZhuqIwbl-7Lw/fdezs1mCZ5s.jpg?size=1619x2160&quality=96&sign=bc8df974a68436d9655b369bf0bebe09&type=album"}
+          source={"Вконтакте"}
+          date={"12.03.2021"}
+          linkPhoto={"/"}
+          fakeBtn={true}
+          />
         </div>
       </div>
     )

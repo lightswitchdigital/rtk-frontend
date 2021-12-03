@@ -1,15 +1,19 @@
 import { API } from "../api"
 
-const SET_USER = 'SET_USER'
+const TOGGLE_SCELETON = 'TOGGLE_SCELETON'
+const SET_PHOTOS = 'SET_PHOTOS'
 
 let initialState = {
-
+    photos: [],
+    togglerSceleton: false,
 }
 
 const appReducer = (state = initialState, action) => {
     switch (action.type) {
-        case SET_USER:
-            return { ...state, userType: action.userType}
+        case TOGGLE_SCELETON:
+            return { ...state, togglerSceleton: action.togglerSceleton}
+        case SET_PHOTOS:
+            return { ...state, photos: action.photos}
         default:
             return state
     }
@@ -17,12 +21,13 @@ const appReducer = (state = initialState, action) => {
 
 // ACTION CREATOR
 
-export const setUser = (userType) => ({ type: SET_USER, userType})
+export const setPhotos = (photos) => ({ type: SET_PHOTOS, photos})
+export const toggleSceleton = (togglerSceleton) => ({ type: TOGGLE_SCELETON, togglerSceleton})
 
 // THUNK
 
-export const loginUser = () => dispatch => {
-    console.log('user');
+export const getPhotos = () => dispatch => {
+    dispatch(toggleSceleton)
 }
 
 export default appReducer

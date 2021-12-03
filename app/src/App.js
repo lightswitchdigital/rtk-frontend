@@ -7,6 +7,8 @@ import { Component } from 'react';
 import store from './redux/store';
 import { Tabs } from './Components/Tabs/Tabs';
 import { PhotosPage } from './Pages/PhotosPage/PhotosPage';
+import { InternetPage } from './Pages/InternetPage/InternetPage';
+import { SocialPage } from './Pages/SocialPage/SocialPage';
 
 class App extends Component {
     render() {
@@ -17,6 +19,8 @@ class App extends Component {
             <Tabs/>
             <Switch>
               <Route path="/photos" component={() => <PhotosPage/>}/>
+              <Route path="/internet" component={() => <InternetPage/>}/>
+              <Route path="/social" component={() => <SocialPage/>}/>
               <Route expect path="/" component={() => <div></div>}/>
             </Switch>
           </div>
