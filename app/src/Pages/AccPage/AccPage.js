@@ -46,7 +46,7 @@ const AccPageAPI = (props) => {
                 <span className={s.lineb}></span>
               </div>
               <div className={s.timeline}>
-                <span className={s.timeLabel}>Одноклассники</span>
+                <span className={s.timeLabel}>Twitter</span>
                 <span className={s.timeValue}>2ч 10мин</span>
                 <span className={s.lineo}></span>
               </div>
@@ -63,9 +63,9 @@ const AccPageAPI = (props) => {
       <div className="container">
         <h1 className={s.name}>Ваш QR-код</h1>
         <p className={s.subtitle}>Покажите работадателю, чтобы поделиться коротким отчетом</p>
-        <div className={s.qr}>
-
-        </div>
+        <a href={'https://rtk.lightswitch.digital/report.html'} className={s.qr}>
+            <img src={'./assets/img/qr.svg'}/>
+        </a>
       </div>
     </div>
 

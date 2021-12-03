@@ -74,11 +74,8 @@ p, h1, h2, h3, h4, h5, h6{
   color: rgba(16, 24, 40, 1);
 }
 
-.red{
-  color: rgba(255, 12, 12, 0.5) !important;
-}
 .green{
-  color: #37A32E !important;
+  color: #37A32E;
 }
 
 .linehr{
@@ -88,4 +85,26 @@ p, h1, h2, h3, h4, h5, h6{
   width: 100%;
   position: relative;
   opacity: 0.1;
+}
+.emotion {
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 12px;
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  background: #707581;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.emotion.red {
+  background: #ff0c0c;
+  border-color: #a60000;
+}
+
+.emotion.green {
+  background: #37a32e;
+  border-color: #074f00;
 }

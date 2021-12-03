@@ -12,7 +12,7 @@ let initialState = {
     initialized: false,
     userType: '',
     users: [
-        {login: 'yurydud', password: '1111', type: 'user'}
+        {login: 'user', password: '1111', type: 'user'}
     ],
     errorMessage: '',
 }

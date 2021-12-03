@@ -181,7 +181,7 @@ class SocialPageAPI extends Component {
             <span className={s.lineb}></span>
           </div>
           <div className={s.timeline}>
-            <span className={s.timeLabel}>Одноклассники</span>
+            <span className={s.timeLabel}>Twitter</span>
             <span className={s.timeValue}>2ч 10мин</span>
             <span className={s.lineo}></span>
           </div>

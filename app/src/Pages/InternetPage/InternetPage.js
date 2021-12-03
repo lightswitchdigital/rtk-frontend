@@ -35,46 +35,45 @@ class InternetPageAPI extends Component {
         <div className={s.flex}>
           <Card 
           emotion={'нейтральный'}
-          img={"https://img5tv.cdnvideo.ru/webp/shared/files/202112/1_1433905.jpg"}//ссылка на изображение
-          title={'Итоги Agrotech-хакатона: на «Цифровом прорыве»'}//заголовок
-          desc={'Завершился восьмой хакатон третьего сезона Всероссийского конкурса «Цифровой прорыв» — флагманского проекта президентской платформы «Россия — страна возможностей»'}//описание
-          linkSite={"/"}//ссылка на страницу публикации
+          img={"https://storage.googleapis.com/telesite-prod/photos/afe7e1a0-4678-11e9-8678-0f66e65989b6.jpeg"}//ссылка на изображение
+          title={'Аршавин попробует себя в роли комментатора'}//заголовок
+          desc={'Вместе с Константином Геничем Аршавин прокомментирует матч отбора к Евро-2020 между Казахстаном и Россией, который пройдет 24 марта в 17:00 по мск.'}//описание
+          linkSite={"https://football.ru/p/arshavin-poprobuet-sebya-v-roli-kommentatora"}//ссылка на страницу публикации
           smallDate={'15.11.2021'}//дата публикации интернет ресурса
-          sourceUrl={'leadersofdigital.ru'}//ссылка на истрочник
-          cardLink={'/'}
-          emotion={'нейтральный'}
+          sourceUrl={'football.ru'}//ссылка на истрочник
+          cardLink={'https://football.ru/p/arshavin-poprobuet-sebya-v-roli-kommentatora'}
+          emotion={'Нейтральный'}
           />
           <Card 
-          img={"https://img5tv.cdnvideo.ru/webp/shared/files/202112/1_1433905.jpg"}//ссылка на изображение
-          title={'Итоги Agrotech-хакатона: на «Цифровом прорыве»'}//заголовок
-          desc={'На итоговых соревнованиях наш университет представят 11 студентов'}//описание
-          linkSite={"/"}//ссылка на страницу публикации
-          smallDate={'15.11.2021'}//дата публикации интернет ресурса
-          sourceUrl={'leadersofdigital.ru'}//ссылка на истрочник
-          cardLink={'/'}
-          emotion={'отрицательный'}
+          img={"https://icdn.lenta.ru/images/2021/07/11/18/20210711183332933/pic_0ca767eef7152630261ea0cd7c7b9e07.jpeg"}//ссылка на изображение
+          title={'Мать Аршавина захотела спрятать сына от женщин'}//заголовок
+          desc={'В июне мать футболиста отсудила дом у его тяжелобольной бывшей жены Алисы Казьминой. '}//описание
+          linkSite={"https://lenta.ru/news/2021/07/12/arschavin/"}//ссылка на страницу публикации
+          smallDate={'12 июля 2021'}//дата публикации интернет ресурса
+          sourceUrl={'lenta.ru'}//ссылка на истрочник
+          cardLink={'https://lenta.ru/news/2021/07/12/arschavin/'}
+          emotion={'Отрицательный'}
           color={'red'}
           />
           <Card 
-          img={"https://img5tv.cdnvideo.ru/webp/shared/files/202112/1_1433905.jpg"}//ссылка на изображение
-          title={'Итоги Agrotech-хакатона: на «Цифровом прорыве»'}//заголовок
-          desc={'Завершился восьмой хакатон третьего сезона Всероссийского конкурса «Цифровой прорыв» — флагманского проекта президентской платформы «Россия — страна возможностей»'}//описание
-          linkSite={"/"}//ссылка на страницу публикации
-          smallDate={'15.11.2021'}//дата публикации интернет ресурса
-          sourceUrl={'leadersofdigital.ru'}//ссылка на истрочник
-          cardLink={'/'}
-          emotion={'отрицательный'}
-          color={'red'}
+          img={"https://icdn.lenta.ru/images/2021/10/29/02/20211029020947163/pic_f3b8dfba601cafa44014948723765b6e.jpeg"}//ссылка на изображение
+          title={'Тяжелобольная бывшая жена Аршавина попала в больницу'}//заголовок
+          desc={'Бывшая жена футболиста Андрея Аршавина Алиса Казьмина попала в больницу и готовится к операции. Об этом сообщает издание StarHit.'}//описание
+          linkSite={"https://lenta.ru/news/2021/10/29/alisa/"}//ссылка на страницу публикации
+          smallDate={'29 октября 2021'}//дата публикации интернет ресурса
+          sourceUrl={'lenta.ru'}//ссылка на истрочник
+          cardLink={'https://lenta.ru/news/2021/10/29/alisa/'}
+          emotion={'Нейтральный'}
           />
           <Card 
-          img={"https://img5tv.cdnvideo.ru/webp/shared/files/202112/1_1433905.jpg"}//ссылка на изображение
-          title={'Итоги Agrotech-хакатона: на «Цифровом прорыве»'}//заголовок
-          desc={'Завершился восьмой хакатон третьего сезона Всероссийского конкурса «Цифровой прорыв» — флагманского проекта президентской платформы «Россия — страна возможностей»'}//описание
-          linkSite={"/"}//ссылка на страницу публикации
+          img={"https://s7.stc.all.kpcdn.net/sports/wp-content/uploads/2021/12/w2hkhbk.jpeg"}//ссылка на изображение
+          title={'Аршавин ездит по России и играет с детьми в футбол'}//заголовок
+          desc={'— А может им через окно? Подгоним им туда автобус – и готово! – в судейской комнате стадиона городка Ярославской области Тутаев шло совещание, как спасать легенд сборной России.'}//описание
+          linkSite={"https://www.kp.ru/sports/futbol/dlya-chego-arshavin-titov-tihonov-ezdyat-na-avtobuse-po-rossii-i-igrayut-v-futbol-s-detmi-v-kroshechnyh-gorodah/?utm_source=yxnews&utm_medium=desktop&utm_referrer=https%3A%2F%2Fyandex.ru%2Fnews%2Fsearch%3Ftext%3D"}//ссылка на страницу публикации
           smallDate={'15.11.2021'}//дата публикации интернет ресурса
-          sourceUrl={'leadersofdigital.ru'}//ссылка на истрочник
-          cardLink={'/'}
-          emotion={'положительный'}
+          sourceUrl={'www.kp.ru'}//ссылка на истрочник
+          cardLink={'https://www.kp.ru/sports/futbol/dlya-chego-arshavin-titov-tihonov-ezdyat-na-avtobuse-po-rossii-i-igrayut-v-futbol-s-detmi-v-kroshechnyh-gorodah/?utm_source=yxnews&utm_medium=desktop&utm_referrer=https%3A%2F%2Fyandex.ru%2Fnews%2Fsearch%3Ftext%3D'}
+          emotion={'Положительный'}
           color={'green'}
           />
         </div>

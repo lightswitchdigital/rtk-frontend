@@ -33,7 +33,7 @@ export const Header = props => {
     <header className="subheader">
       <div className="container d-flex jc-sb">
         <NavLink to={'/integration'} className="header-link">
-           Интеграция
+           Результаты поиска
         </NavLink>
         <NavLink to={'/accaunt'} className="header-link">
           Личный кабинет

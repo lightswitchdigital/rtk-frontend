@@ -89,18 +89,23 @@
     text-overflow: ellipsis;
 }
 .emotion{
-    color: rgba(16, 24, 40, 0.5);
-    font-size: 16px;
-    padding: 0;
-    margin-top: 8px;
-    span{
-        color: rgba(16, 24, 40, 1);
-        &.red{
-            color: rgba(255, 12, 12, 0.5);
-        }
-        &.green{
-            color: #37A32E;
-        }
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 12px;
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    background: #707581;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    &.red{
+        background: #FF0C0C;
+        background-color: #A60000;
+    }
+    &.green{
+        background: #37A32E;
+        background-color: #074F00;
     }
 }
 .smallInfo{

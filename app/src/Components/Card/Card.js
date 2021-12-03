@@ -6,6 +6,7 @@ const CardInfo = ({img , source, date, emotion, linkPhoto, title, desc, color, l
   return (
       <div className={s.card}>
           <div className={s.img}>
+              {emotion ? <p className={`emotion ${color}`}>{emotion}</p> : null}
               <img src={img}/>
           </div>
           <div className={s.smallInfo}>
@@ -24,7 +25,6 @@ const CardInfo = ({img , source, date, emotion, linkPhoto, title, desc, color, l
               <span>Дата создания:</span>
               <span>{date}</span>
           </p> : null}
-          {emotion ? <p className={s.emotion}>Эмоцианальный окрас: <span className={color}>{emotion}</span></p> : null}
           {linkPhoto ? <NavLink to={'/'}>Перейти на страницу фотографии</NavLink> : null}
           {linkSite ? <NavLink to={'/'}>Перейти на сайт</NavLink> : null}
       </div>

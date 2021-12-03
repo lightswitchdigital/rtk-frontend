@@ -88,26 +88,26 @@ class PhotosPageAPI extends Component {
         {this.props.isFetching ? <SkeletonLoader/> :
         <div className={s.flex}>
           <Card 
-          img={"https://sun9-83.userapi.com/impg/_NdiutKXB4wTPB0YFKb39RYqZyZhuqIwbl-7Lw/fdezs1mCZ5s.jpg?size=1619x2160&quality=96&sign=bc8df974a68436d9655b369bf0bebe09&type=album"}
+          img={"https://goprosport.ru/wp-content/uploads/2018/11/g_2dbeef45073af2073a4b140c2769cd95_2_1400x1100.jpg"}
           source={"Вконтакте"}
           date={"12.03.2021"}
           linkPhoto={"/"}
           />
           <Card 
-          img={"https://sun9-83.userapi.com/impg/_NdiutKXB4wTPB0YFKb39RYqZyZhuqIwbl-7Lw/fdezs1mCZ5s.jpg?size=1619x2160&quality=96&sign=bc8df974a68436d9655b369bf0bebe09&type=album"}
-          source={"Вконтакте"}
+          img={"https://i.notabilityperson.com/images/001/image-1046.jpg"}
+          source={"ftbl.info"}
           date={"12.03.2021"}
           linkPhoto={"/"}
           />
           <Card 
-          img={"https://sun9-83.userapi.com/impg/_NdiutKXB4wTPB0YFKb39RYqZyZhuqIwbl-7Lw/fdezs1mCZ5s.jpg?size=1619x2160&quality=96&sign=bc8df974a68436d9655b369bf0bebe09&type=album"}
-          source={"Вконтакте"}
+          img={"https://tvcenter.ru/wp-content/uploads/2021/07/scale_1200-34.jpg"}
+          source={"tvcenter.ru"}
           date={"12.03.2021"}
           linkPhoto={"/"}
           />
           <Card 
-          img={"https://sun9-83.userapi.com/impg/_NdiutKXB4wTPB0YFKb39RYqZyZhuqIwbl-7Lw/fdezs1mCZ5s.jpg?size=1619x2160&quality=96&sign=bc8df974a68436d9655b369bf0bebe09&type=album"}
-          source={"Вконтакте"}
+          img={"https://www.soccer.ru/sites/default/files/pva_3415_0.jpg"}
+          source={"soccer.ru"}
           date={"12.03.2021"}
           linkPhoto={"/"}
           />

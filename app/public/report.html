@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <style>
+    @font-face {
+      font-family: 'RostelecomBasis';
+      font-weight: 700;
+      src: local('RostelecomBasis'), url(./assets/fonts/RostelecomBasis-Bold.otf);
+    }
+    @font-face {
+      font-family: 'RostelecomBasis';
+      font-weight: 500;
+      src: local('RostelecomBasis'), url(./assets/fonts/RostelecomBasis-Medium.otf);
+    }
+    @font-face {
+      font-family: 'RostelecomBasis';
+      font-weight: 400;
+      src: local('RostelecomBasis'), url(./assets/fonts/RostelecomBasis-Regular.otf);
+    }
+    @font-face {
+      font-family: 'RostelecomBasis';
+      font-weight: 200;
+      src: local('RostelecomBasis'), url(./assets/fonts/RostelecomBasis-Light.otf);
+    }
+    </style>
+  <style>
+    body{
+      font-family: 'RostelecomBasis';
+      margin: 0;
+      padding: 0;
+      padding-bottom: 50px;
+    }
+    .logo{
+      display: flex;
+      align-items: flex-end;
+      position: relative;
+      text-decoration: none;
+      color: #101828;
+      font-size: 18px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .logo img{
+      width: 18px;
+      margin-right: 4px;
+    }
+    .container{
+      margin: 0 21px;
+      box-sizing: border-box;
+    }
+    header{
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(16, 24, 40, 0.5);
+      margin-bottom: 28px;
+    }
+    .analitics {
+      max-width: 296px;
+      width: 100%;
+      margin-bottom: 20px
+    }
+    a{
+      text-decoration: none;
+      color: #f80;
+      display: block;
+    }
+      .analitTitle {
+          color: rgba(16, 24, 40, .5);
+          font-size: 16px;
+          font-weight: 400
+      }
+
+      .analitSubitle {
+          color: #101828;
+          font-size: 16px;
+          font-weight: 400;
+          margin-top: 8px
+      }
+
+      .timeline {
+          margin-top: 12px;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          font-size: 16px;
+          font-weight: 400
+      }
+
+      .lineb {
+          width: 100%;
+          height: 4px;
+          display: block;
+          background: #2787f5
+      }
+
+      .lineo {
+          width: 100%;
+          height: 4px;
+          display: block;
+          background: #f80
+      }
+
+      .endStr {
+          font-size: 16px;
+          margin-top: 16px;
+          margin-right: 0;
+          margin-left: auto;
+          display: block;
+          float: right
+      }
+
+      .flex {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+      }
+      .green {
+          font-size: 16px;
+          color: #37a32e;
+          margin-top: 12px
+      }
+      .title {
+        font-size: 20px;
+        color: #000000;
+        margin-top: 28px;
+        margin-bottom: 12px;
+      }
+      .infoGroup{
+        margin-top: 16px;
+      }
+      .value{
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+      }
+      .lable{
+        font-size: 16px;
+        color: rgba(16, 24, 40, 0.5);
+        margin: 0;
+        margin-bottom: 8px;
+      }
+
+  </style>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="./assets/img/logo-rtc.svg"/>
+        Цифровой двойник
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <p class="title">Степанов Матвей Павлович</p>
+    <div class="infoGroup">
+      <p class="lable">Дата рождения</p>
+      <p class="value">05.09.2003</p>
+    </div>
+    <div class="infoGroup">
+      <p class="lable">Телефон</p>
+      <p class="value">+79942534420</p>
+    </div>
+    <div class="infoGroup">
+      <p class="lable">Электронная почта</p>
+      <p class="value">stepanov@gmail.com</p>
+    </div>
+    <p class="title">Аналитика</p>
+    <div class="flex">
+      <div class="analitics">
+        <p class="analitTitle">Социальные сети</p>
+        <p class="analitSubitle">За последнюю неделю было проведено</p>
+        <div class="timeline">
+          <span class="timeLabel">Вконтакте</span>
+          <span class="timeValue">8ч 21мин</span>
+          <span class="lineb"></span>
+        </div>
+        <div class="timeline">
+          <span class="timeLabel">Одноклассники</span>
+          <span class="timeValue">2ч 10мин</span>
+          <span class="lineo"></span>
+        </div>
+        <span class="endStr">Общее кол-во 10ч 31мин</span>
+      </div>
+      <div class="emotion">
+        <p class="analitTitle">Интернет-ресурсы</p>
+        <p class="analitSubitle">За последнюю неделю сложилось мнение</p>
+        <p class="green">Положительное</p>
+      </div>
+    </div>
+    <p class="title">Социальные сети</p>
+    <a href="#">Вконтакте</a>
+    <a href="#">Twitter</a>
+    <a href="#">Instagram</a>
+  </div>
+</body>
+</html>
