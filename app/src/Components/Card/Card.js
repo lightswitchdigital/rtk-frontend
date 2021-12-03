@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import s from  './Card.module.css'
 
-const CardInfo = ({img , source, date, emotion, linkPhoto, title, desc, linkSite, smallDate, sourceUrl}) => {
+const CardInfo = ({img , source, date, emotion, linkPhoto, title, desc, color, linkSite, smallDate, sourceUrl}) => {
   return (
       <div className={s.card}>
           <div className={s.img}>
@@ -24,23 +24,23 @@ const CardInfo = ({img , source, date, emotion, linkPhoto, title, desc, linkSite
               <span>Дата создания:</span>
               <span>{date}</span>
           </p> : null}
-          {emotion ? <span className={s.emotion}>{emotion}</span> : null}
+          {emotion ? <p className={s.emotion}>Эмоцианальный окрас: <span className={color}>{emotion}</span></p> : null}
           {linkPhoto ? <NavLink to={'/'}>Перейти на страницу фотографии</NavLink> : null}
           {linkSite ? <NavLink to={'/'}>Перейти на сайт</NavLink> : null}
       </div>
   );
 }
 
-export const Card = ({img , source, date, fakeBtn, linkPhoto, title, desc, linkSite, smallDate, sourceUrl, cardLink}) => {
+export const Card = ({img , source, date, emotion, fakeBtn, color, linkPhoto, title, desc, linkSite, smallDate, sourceUrl, cardLink}) => {
   if(cardLink){
     return (
       <NavLink to={cardLink} className={s.cardLink}>
-        <CardInfo img={img} source={source} date={date} desc={desc} linkPhoto={linkPhoto} title={title} linkSite={linkSite} fakeBtn={fakeBtn} smallDate={smallDate} sourceUrl={sourceUrl}/>
+        <CardInfo img={img} source={source} date={date} color={color} emotion={emotion} desc={desc} linkPhoto={linkPhoto} title={title} linkSite={linkSite} fakeBtn={fakeBtn} smallDate={smallDate} sourceUrl={sourceUrl}/>
       </NavLink>
     )
   }else{
     return (
-      <CardInfo img={img} source={source} date={date} desc={desc} linkPhoto={linkPhoto} title={title} linkSite={linkSite} fakeBtn={fakeBtn} smallDate={smallDate} sourceUrl={sourceUrl}/>
+      <CardInfo img={img} source={source} date={date} emotion={emotion} desc={desc} linkPhoto={linkPhoto} title={title} linkSite={linkSite} fakeBtn={fakeBtn} smallDate={smallDate} sourceUrl={sourceUrl}/>
   )
   }
 }

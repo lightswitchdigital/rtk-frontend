@@ -1,6 +1,8 @@
 body{
   font-family: 'RostelecomBasis';
   color: #101828;
+  padding: 0;
+  margin: 0;
 }
 p, h1, h2, h3, h4, h5, h6{
   padding: 0;
@@ -24,6 +26,12 @@ p, h1, h2, h3, h4, h5, h6{
 }
 .header{
   padding: 20px 0;
+  margin: 0;
+  border-bottom: 1px solid rgba(16, 24, 40, 0.1);
+}
+.subheader{
+  padding-bottom: 8px;
+  padding-top: 20px;
   margin: 0;
   border-bottom: 1px solid rgba(16, 24, 40, 0.1);
 }
@@ -53,8 +61,31 @@ p, h1, h2, h3, h4, h5, h6{
   transition: all 0.2s;
 }
 .header ul a:hover{
-  text-decoration: none;
-  font-size: 14px;
   color: rgba(16, 24, 40, 1);
 }
 
+.header-link{
+  text-decoration: none;
+  font-size: 16px;
+  color: rgba(16, 24, 40, 0.5);
+  transition: all 0.2s;
+}
+.header-link:hover{
+  color: rgba(16, 24, 40, 1);
+}
+
+.red{
+  color: rgba(255, 12, 12, 0.5) !important;
+}
+.green{
+  color: #37A32E !important;
+}
+
+.linehr{
+  background: rgba(16, 24, 40, 0.5);
+  display: block;
+  height: 1px;
+  width: 100%;
+  position: relative;
+  opacity: 0.1;
+}
