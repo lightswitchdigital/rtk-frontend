@@ -1,3 +1,9 @@
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0px;
+    margin-top: 24px;
+}
 .card{
     margin-right: 16px;
     margin-bottom: 24px;
@@ -81,6 +87,15 @@
     max-height: 100px;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+.emoji{
+    color: rgba(16, 24, 40, 0.5);
+    font-size: 16px;
+    padding: 0;
+    margin-top: 8px;
+    span{
+        color: rgba(16, 24, 40, 1);
+    }
 }
 .smallInfo{
     font-size: 12px;

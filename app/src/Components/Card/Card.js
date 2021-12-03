@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import s from  './Card.module.css'
 
-const CardInfo = ({img , source, date, fakeBtn, linkPhoto, title, desc, linkSite, smallDate, sourceUrl}) => {
+const CardInfo = ({img , source, date, emotion, linkPhoto, title, desc, linkSite, smallDate, sourceUrl}) => {
   return (
       <div className={s.card}>
           <div className={s.img}>
@@ -13,7 +13,7 @@ const CardInfo = ({img , source, date, fakeBtn, linkPhoto, title, desc, linkSite
             {sourceUrl ? <NavLink to={sourceUrl}>{sourceUrl}</NavLink> : null}
           </div>
           {title ? <h1 className={s.title}>{title}</h1> : null}
-          {desc ? <h1 className={s.desc}>{desc}</h1> : null}
+          {desc ? <p className={s.desc}>{desc}</p> : null}
           {source ? 
           <p className={s.info}>
               <span>Источник:</span>
@@ -24,9 +24,9 @@ const CardInfo = ({img , source, date, fakeBtn, linkPhoto, title, desc, linkSite
               <span>Дата создания:</span>
               <span>{date}</span>
           </p> : null}
+          {emotion ? <span className={s.emotion}>{emotion}</span> : null}
           {linkPhoto ? <NavLink to={'/'}>Перейти на страницу фотографии</NavLink> : null}
           {linkSite ? <NavLink to={'/'}>Перейти на сайт</NavLink> : null}
-          {fakeBtn ? <NavLink to={'/'}>Не моя фотография</NavLink> : null}
       </div>
   );
 }

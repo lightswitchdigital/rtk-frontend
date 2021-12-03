@@ -27,6 +27,7 @@ class InternetPageAPI extends Component {
         />
         <div className={s.flex}>
           <Card 
+          emotion={'нейтральный'}
           img={"https://img5tv.cdnvideo.ru/webp/shared/files/202112/1_1433905.jpg"}//ссылка на изображение
           title={'Итоги Agrotech-хакатона: на «Цифровом прорыве»'}//заголовок
           desc={'Завершился восьмой хакатон третьего сезона Всероссийского конкурса «Цифровой прорыв» — флагманского проекта президентской платформы «Россия — страна возможностей»'}//описание
@@ -34,6 +35,7 @@ class InternetPageAPI extends Component {
           smallDate={'15.11.2021'}//дата публикации интернет ресурса
           sourceUrl={'leadersofdigital.ru'}//ссылка на истрочник
           cardLink={'/'}
+          
           />
           <Card 
           img={"https://img5tv.cdnvideo.ru/webp/shared/files/202112/1_1433905.jpg"}//ссылка на изображение
@@ -43,6 +45,7 @@ class InternetPageAPI extends Component {
           smallDate={'15.11.2021'}//дата публикации интернет ресурса
           sourceUrl={'leadersofdigital.ru'}//ссылка на истрочник
           cardLink={'/'}
+          emotion={'отрицательный'}
           />
           <Card 
           img={"https://img5tv.cdnvideo.ru/webp/shared/files/202112/1_1433905.jpg"}//ссылка на изображение
@@ -52,6 +55,7 @@ class InternetPageAPI extends Component {
           smallDate={'15.11.2021'}//дата публикации интернет ресурса
           sourceUrl={'leadersofdigital.ru'}//ссылка на истрочник
           cardLink={'/'}
+          emotion={'отрицательный'}
           />
           <Card 
           img={"https://img5tv.cdnvideo.ru/webp/shared/files/202112/1_1433905.jpg"}//ссылка на изображение
@@ -61,24 +65,7 @@ class InternetPageAPI extends Component {
           smallDate={'15.11.2021'}//дата публикации интернет ресурса
           sourceUrl={'leadersofdigital.ru'}//ссылка на истрочник
           cardLink={'/'}
-          />
-          <Card 
-          img={"https://img5tv.cdnvideo.ru/webp/shared/files/202112/1_1433905.jpg"}//ссылка на изображение
-          title={'Итоги Agrotech-хакатона: на «Цифровом прорыве»'}//заголовок
-          desc={'На итоговых соревнованиях наш университет представят 11 студентов'}//описание
-          linkSite={"/"}//ссылка на страницу публикации
-          smallDate={'15.11.2021'}//дата публикации интернет ресурса
-          sourceUrl={'leadersofdigital.ru'}//ссылка на истрочник
-          cardLink={'/'}
-          />
-          <Card 
-          img={"https://img5tv.cdnvideo.ru/webp/shared/files/202112/1_1433905.jpg"}//ссылка на изображение
-          title={'Итоги Agrotech-хакатона: на «Цифровом прорыве»'}//заголовок
-          desc={'Завершился восьмой хакатон третьего сезона Всероссийского конкурса «Цифровой прорыв» — флагманского проекта президентской платформы «Россия — страна возможностей»'}//описание
-          linkSite={"/"}//ссылка на страницу публикации
-          smallDate={'15.11.2021'}//дата публикации интернет ресурса
-          sourceUrl={'leadersofdigital.ru'}//ссылка на истрочник
-          cardLink={'/'}
+          emotion={'положительный'}
           />
         </div>
       </div>
