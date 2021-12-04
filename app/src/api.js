@@ -1,7 +1,7 @@
 import * as axios from 'axios'
 
 const instance = axios.create({
-    baseURL : 'https://rtk.lightswitch.digital' 
+    baseURL : 'http://10.106.3.89:8000' 
 })
 
 export const API = {

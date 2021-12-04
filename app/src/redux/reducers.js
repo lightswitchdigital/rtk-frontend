@@ -71,7 +71,7 @@ export const loginUser = (login, password) => (dispatch) => {
     }
 }
 
-export const getRecords = () => (dispatch) => {
+export const requestRecords = () => (dispatch) => {
     return async (dispatch) => {
         dispatch(toggleFetching(true))
         let data = await API.getRecords()

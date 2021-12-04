@@ -7,7 +7,7 @@ import { Card } from '../../Components/Card/Card';
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import { SkeletonLoader } from '../../Components/Card/SkeletonCard';
-import {getPhotos } from '../../redux/reducers'
+import {getPhotos, requestRecords } from '../../redux/reducers'
 
 const DataPickerCMP = () => {
   const [visible, setVisible] = useState(false);
@@ -72,6 +72,8 @@ class PhotosPageAPI extends Component {
 
   componentDidMount(){
     this.props.getPhotos()
+    this.props.requestRecords()
+    console.log(this.props.record);
   }
 
   render() {
@@ -119,7 +121,8 @@ class PhotosPageAPI extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  isFetching: state.app.isFetching
+  isFetching: state.app.isFetching,
+  record: state.app.record
 })
 
-export const PhotosPage = connect(mapStateToProps, { getPhotos })(PhotosPageAPI)
+export const PhotosPage = connect(mapStateToProps, { getPhotos, requestRecords })(PhotosPageAPI)
