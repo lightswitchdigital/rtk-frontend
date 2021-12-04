@@ -5,6 +5,7 @@ const SET_PHOTOS = 'SET_PHOTOS'
 const SET_USER = 'SET_USER'
 const SET_MESSAGE = 'SET_MESSAGE'
 const SET_INITIAL = 'SET_INITIAL'
+const SET_RECORD = 'SET_RECORD'
 
 let initialState = {
     photos: [],
@@ -15,6 +16,7 @@ let initialState = {
         {login: 'user', password: '1111', type: 'user'}
     ],
     errorMessage: '',
+    record: {}
 }
 
 const appReducer = (state = initialState, action) => {
@@ -29,6 +31,9 @@ const appReducer = (state = initialState, action) => {
             return { ...state, initialized: action.initialized}
         case SET_MESSAGE:
             return { ...state, errorMessage: action.errorMessage}
+        case SET_RECORD:
+            return { ...state, record: action.record}
+        
         default:
             return state
     }
@@ -37,6 +42,7 @@ const appReducer = (state = initialState, action) => {
 // ACTION CREATOR
 
 export const setUser = (userType) => ({ type: SET_USER, userType})
+export const setRecord = (record) => ({ type: SET_RECORD, record})
 export const setPhotos = (photos) => ({ type: SET_PHOTOS, photos})
 export const setInitial = (initialized) => ({ type: SET_INITIAL, initialized})
 export const setMessage = (errorMessage) => ({ type: SET_MESSAGE, errorMessage})
@@ -62,6 +68,16 @@ export const loginUser = (login, password) => (dispatch) => {
         }
     }else{
         dispatch(setMessage('Логин неверен'))
+    }
+}
+
+export const getRecords = () => (dispatch) => {
+    return async (dispatch) => {
+        dispatch(toggleFetching(true))
+        let data = await API.getRecords()
+        
+        dispatch(setRecord(data.data))
+        dispatch(toggleFetching(false))
     }
 }
 

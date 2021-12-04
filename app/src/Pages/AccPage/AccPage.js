@@ -64,7 +64,7 @@ const AccPageAPI = (props) => {
         <h1 className={s.name}>Ваш QR-код</h1>
         <p className={s.subtitle}>Покажите работадателю, чтобы поделиться коротким отчетом</p>
         <a href={'https://rtk.lightswitch.digital/report.html'} className={s.qr}>
-            <img src={'./assets/img/qr.svg'}/>
+            <img src={'./assets/img/qrdemo.svg'}/>
         </a>
       </div>
     </div>

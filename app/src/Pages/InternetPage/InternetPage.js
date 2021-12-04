@@ -52,7 +52,7 @@ class InternetPageAPI extends Component {
           smallDate={'12 июля 2021'}//дата публикации интернет ресурса
           sourceUrl={'lenta.ru'}//ссылка на истрочник
           cardLink={'https://lenta.ru/news/2021/07/12/arschavin/'}
-          emotion={'Отрицательный'}
+          emotion={'Негативный'}
           color={'red'}
           />
           <Card 
